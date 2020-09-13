@@ -56,7 +56,7 @@ function init() {
     // orbitControls = new OrbitControls(camera, renderer.domElement)
 
     //add 3d model
-    new GLTFLoader().load('../3dModel/scene.gltf', gltf => {
+    new GLTFLoader().load('3dModel/scene.gltf', gltf => {
         model = gltf.scene.children[0]
         model.traverse(n => {
             if (n.isMesh) {
